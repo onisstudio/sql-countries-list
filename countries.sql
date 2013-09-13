@@ -4,7 +4,7 @@
 -- http://en.wikipedia.org/wiki/ISO_3166-1
 -- http://en.wikipedia.org/wiki/List_of_Internet_top-level_domains
 
-CREATE TABLE IF NOT EXISTS `onis_countries` (
+CREATE TABLE IF NOT EXISTS `countries` (
 `id` int(11) NOT NULL auto_increment,
 `name` varchar(100) NOT NULL default '',
 `alpha-2` varchar(2) NOT NULL default '0',
@@ -16,7 +16,7 @@ PRIMARY KEY (`id`)
 -- 
 -- Dumping data for table `countries`
 -- 
-INSERT INTO `onis_countries` (`name`, `alpha-2`, `alpha-3`, `numeric`, `continent`) VALUES
+INSERT INTO `countries` (`name`, `alpha-2`, `alpha-3`, `numeric`, `continent`) VALUES
 ('Afghanistan', 'AF', 'AFG', '004', '3'),
 ('Åland Islands', 'AX', 'ALA', '248', '4'),
 ('Albania', 'AL', 'ALB', '008', '4'),
@@ -266,3 +266,20 @@ INSERT INTO `onis_countries` (`name`, `alpha-2`, `alpha-3`, `numeric`, `continen
 ('Yemen', 'YE', 'YEM', '887', '3'),
 ('Zambia', 'ZM', 'ZMB', '894', '1'),
 ('Zimbabwe', 'ZW', 'ZWE', '716', '1');
+
+CREATE TABLE IF NOT EXISTS `continents` (
+`id` int(11) NOT NULL auto_increment,
+`name` varchar(100) NOT NULL default '',
+PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+-- 
+-- Dumping data for table `continents`
+-- 
+INSERT INTO `continents` (`id`, `name`) VALUES
+('1', 'Africa'),
+('2', 'Antarctica'),
+('3', 'Asia'),
+('4', 'Europe'),
+('5', 'North America'),
+('6', 'Oceania'),
+('7', 'South America');
