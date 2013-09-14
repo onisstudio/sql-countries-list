@@ -21,7 +21,7 @@ INSERT INTO `countries` (`name`, `alpha-2`, `alpha-3`, `numeric`, `continent`) V
 ('Åland Islands', 'AX', 'ALA', '248', '4'),
 ('Albania', 'AL', 'ALB', '008', '4'),
 ('Algeria', 'DZ', 'DZA', '012', '1'),
-('American Samoa', '3', 'ASM', '016', '6'),
+('American Samoa', 'AS', 'ASM', '016', '6'),
 ('Andorra', 'AD', 'AND', '020', '4'),
 ('Angola', 'AO', 'AGO', '024', '1'),
 ('Anguilla', 'AI', 'AIA', '660', '5'),
